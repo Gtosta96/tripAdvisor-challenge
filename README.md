@@ -27,7 +27,7 @@ Typescript has a large community, twice as flow in Github stars, and a way bette
 CREA provides Jest out of the box, Alongside it, The application uses `React-Test-Renderer` to test React components.
 
 ##### Coverage
-
+![tests](https://user-images.githubusercontent.com/11162653/51035752-27e15c80-1592-11e9-87e7-b41db502bc32.jpg)
 ...
 
 ## Enhancements
