@@ -17,4 +17,5 @@ const Error = (props: IProps) => (
   </Segment>
 );
 
-export default React.memo(Error);
+// export default React.memo(Error);
+export default Error;

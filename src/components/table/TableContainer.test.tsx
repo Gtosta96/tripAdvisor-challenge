@@ -15,7 +15,6 @@ describe('::Component -> components/table/TableContainer.tsx::', () => {
   /* -- */
 
   it('renders without crashing', () => {
-    const component = TestRenderer.create(<TableContainer/>);
     expect(component).toBeDefined();
   });
 
@@ -30,14 +29,14 @@ describe('::Component -> components/table/TableContainer.tsx::', () => {
   });
 
   it('should render Loader Component', () => {
-    component.root.instance.setState({ loading: true })
+    component.root.instance.setState({ loading: true });
     const loader = component.root.findByType(Loader);
 
     expect(loader).toBeDefined();
   });
 
   it('should render Error Component', () => {
-    component.root.instance.setState({ error: true, loading: false })
+    component.root.instance.setState({ error: true, loading: false });
     const error = component.root.findByType(Error);
 
     expect(error).toBeDefined();

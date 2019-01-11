@@ -10,7 +10,7 @@ const mockRows: IRow[] = [{
   title: 'mockTitle',
   created_at: '2019-01-11T02:40:47Z',
   updated_at: '2019-01-11T02:40:47Z',
-  labels: [{ name: 'label1' }, { name: 'label2' }],
+  labels: [{ id: 1, name: 'label1' }, { id: 2, name: 'label2' }],
   state: 'mockState',
 }];
 
