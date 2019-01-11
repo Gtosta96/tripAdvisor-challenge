@@ -3,6 +3,6 @@ export interface IRow {
   title: string,
   created_at: string,
   updated_at: string,
-  labels: { name: string }[],
+  labels: { id: number, name: string }[],
   state: string,
 }

@@ -35,7 +35,7 @@ const TableExamplePagination = (props: IProps) => (
           <Table.Cell>{dateFormatter(row.updated_at)}</Table.Cell>
           <Table.Cell>
             {row.labels.map((label) => (
-              <List bulleted key={label.name}>
+              <List bulleted key={label.id}>
                 <List.Item>{label.name}</List.Item>
                 <List.Item>{label.name}</List.Item>
               </List>
