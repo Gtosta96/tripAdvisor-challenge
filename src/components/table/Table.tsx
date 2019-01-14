@@ -10,11 +10,11 @@ interface IProps {
 const TableExamplePagination = (props: IProps) => (
   <Fragment>
     <Header as="h2">
-      <Icon name="facebook official" />
+      <Icon name="facebook official" color="blue" />
       <Header.Content>Issue Tracker</Header.Content>
     </Header>
 
-    <Table size="large" padded="very" striped celled>
+    <Table size="large" padded="very" striped celled color="blue">
       <Table.Header>
         <Table.Row>
           <Table.HeaderCell>Issue Number</Table.HeaderCell>
@@ -29,7 +29,7 @@ const TableExamplePagination = (props: IProps) => (
       <Table.Body>
         {props.rows.map((row) => (
           <Table.Row key={row.id}>
-          <Table.Cell><Label>{row.id}</Label></Table.Cell>
+          <Table.Cell><Label color="blue">{row.id}</Label></Table.Cell>
           <Table.Cell>{row.title}</Table.Cell>
           <Table.Cell>{dateFormatter(row.created_at)}</Table.Cell>
           <Table.Cell>{dateFormatter(row.updated_at)}</Table.Cell>
